@@ -1,0 +1,145 @@
+h1 {
+    text-decoration: underline;
+}
+
+@keyframes chroma1 {
+    0% {background-color: red;}
+    12.5% {background-color: orange;}
+    25% {background-color: yellow;}
+    37.5% {background-color: green;}
+    50% {background-color: blue;}
+    62.5% {background-color: indigo;}
+    75% {background-color: violet;}
+    87.5% {background-color: red;}
+}
+
+@keyframes chroma2 {
+    0% {background-color: orange;}
+    12.5% {background-color: yellow;}
+    25% {background-color: green;}
+    37.5% {background-color: blue;}
+    50% {background-color: indigo;}
+    62.5% {background-color: violet;}
+    75% {background-color: red;}
+    87.5% {background-color: orange;}
+}
+
+@keyframes chroma3 {
+    0% {background-color: yellow;}
+    12.5% {background-color: green;}
+    25% {background-color: blue;}
+    37.5% {background-color: indigo;}
+    50% {background-color: violet;}
+    62.5% {background-color: red;}
+    75% {background-color: orange;}
+    87.5% {background-color: yellow;}
+}
+
+@keyframes chroma4 {
+    0% {background-color: green;}
+    12.5% {background-color: blue;}
+    25% {background-color: indigo;}
+    37.5% {background-color: violet;}
+    50% {background-color: red;}
+    62.5% {background-color: orange;}
+    75% {background-color: yellow;}
+    87.5% {background-color: green;}
+}
+
+@keyframes chroma5 {
+    0% {background-color: blue;}
+    12.5% {background-color: indigo;}
+    25% {background-color: violet;}
+    37.5% {background-color: red;}
+    50% {background-color: orange;}
+    62.5% {background-color: yellow;}
+    75% {background-color: green;}
+    87.5% {background-color: blue;}
+}
+
+@keyframes chroma6 {
+    0% {background-color: indigo;}
+    12.5% {background-color: violet;}
+    25% {background-color: red;}
+    37.5% {background-color: orange;}
+    50% {background-color: yellow;}
+    62.5% {background-color: green;}
+    75% {background-color: blue;}
+    87.5% {background-color: indigo;}
+}
+
+@keyframes chroma7 {
+    0% {background-color: violet;}
+    12.5% {background-color: red;}
+    25% {background-color: orange;}
+    37.5% {background-color: yellow;}
+    50% {background-color: green;}
+    62.5% {background-color: blue;}
+    75% {background-color: indigo;}
+    87.5% {background-color: violet;}
+}
+
+div {
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    height: 50px;
+    padding: 22px;
+    margin: 10px 0;
+    border: 1px solid black;
+}
+
+#red {
+    background-color: red;
+    animation-name: chroma1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#orange {
+    background-color: orange;
+    margin-left: 30px;
+    animation-name: chroma2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#yellow {
+    background-color: yellow;
+    margin-left: 60px;
+    animation-name: chroma3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#green {
+    background-color: green;
+    margin-left: 90px;
+    animation-name: chroma4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#blue {
+    background-color: blue;
+    margin-left: 120px;
+    animation-name: chroma5;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#indigo {
+    background-color: indigo;
+    margin-left: 150px;
+    animation-name: chroma6;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#violet {
+    background-color: violet;
+    margin-left: 180px;
+    animation-name: chroma7;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
