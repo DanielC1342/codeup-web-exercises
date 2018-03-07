@@ -2,3 +2,13 @@
     color: purple;
     text-decoration: underline;
 }
+
+.mainheader {
+    text-align: center;
+    color: purple;
+    text-decoration: underline;
+}
+
+body {
+    background-image: url("spiration-light.png");
+}
