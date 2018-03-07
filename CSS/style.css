@@ -11,4 +11,34 @@
 
 body {
     background-image: url("spiration-light.png");
+    font-family: "American Typewriter", sans-serif;
 }
+
+ul {
+    list-style-type: box;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 40px;
+}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
