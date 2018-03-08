@@ -13,38 +13,57 @@ a:hover {
 div {
     font-weight: bold;
     color: white;
-    width: 150px;
+    width: 50px;
     height: 50px;
     padding: 22px;
-    margin: 10px 0;
+    margin: 25px 25px;
     border: 1px solid black;
+}
+
+div:nth-child(5) {
+    clear: both;
 }
 
 #red {
     background-color: red;
+    float:left;
 }
 
 #orange {
     background-color: orange;
-    margin-left: 30px;
+    float:left;
 }
 
 #yellow {
     background-color: yellow;
-    margin-left: 60px;
+    float:left;
 }
 
 #green {
     background-color: green;
-    margin-left: 90px;
+    float: left;
 }
 
 #blue {
     background-color: blue;
-    margin-left: 120px;
+    float:left;
+
 }
 
 #violet {
     background-color: violet;
-    margin-left: 150px;
+    float:left;
+
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+div>img {
+    position: relative;
+    bottom: 85px;
+    left: 65px;
 }
