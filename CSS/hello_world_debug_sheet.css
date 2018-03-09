@@ -22,8 +22,16 @@ div {
     text-align: center;
 }
 
+a {
+    margin: 100px 0;
+}
+
 h1 {
     margin: 0 0 0 10px;
+}
+
+div p {
+    margin: 10px 0;
 }
 
 #rightside {
