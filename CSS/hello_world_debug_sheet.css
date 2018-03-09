@@ -23,7 +23,11 @@ div {
 }
 
 a {
-    margin: 100px 0;
+    color: black;
+}
+
+a:hover {
+    color: blue;
 }
 
 h1 {
