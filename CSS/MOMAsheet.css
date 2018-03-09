@@ -1,0 +1,222 @@
+#canvas1 {
+    background-color: #0868BF;
+    height: 400px;
+    width: 600px;
+}
+
+#grn {
+    background-color: #1D9F3D;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 200px;
+}
+
+#redcurve {
+    background-color: #EF3529;
+    height: 200px;
+    width: 200px;
+    border-bottom-left-radius: 100px;
+    position: relative;
+    left: 200px;
+    top: 200px;
+}
+
+#redbox {
+    background-color: #EF3529;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 200px;
+    bottom: 200px;
+}
+
+/*-----------------------------------------*/
+
+#canvas2 {
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    border: 1px solid;
+    margin: 10px 0;
+}
+/*7 horlines*/
+#horline1 {
+    background-color: black;
+    height: 10px;
+    width: 600px;
+    position: relative;
+    top: 320px;
+}
+
+#horline2 {
+    background-color: black;
+    height: 10px;
+    width: 320px;
+    position: relative;
+    top: 240px;
+}
+
+#horline3 {
+    background-color: black;
+    height: 10px;
+    width: 170px;
+    position: relative;
+    top: 230px;
+    left: 430px;
+}
+
+#horline4 {
+    background-color: black;
+    height: 10px;
+    width: 350px;
+    position: relative;
+    top: 80px;
+    left: 80px;
+}
+
+#horline5 {
+    background-color: black;
+    height: 10px;
+    width: 50px;
+    position: relative;
+    top: 170px;
+    left: 80px;
+}
+
+#horline6 {
+    background-color: black;
+    height: 10px;
+    width: 70px;
+    position: relative;
+    top: 170px;
+    left: 430px;
+}
+
+#horline7 {
+    background-color: black;
+    height: 10px;
+    width: 40px;
+    position: relative;
+    top: 300px;
+    left: 380px;
+}
+/*6 verlines*/
+#verline1 {
+    background-color: black;
+    height: 250px;
+    width: 10px;
+    position: relative;
+    bottom: 70px;
+    left: 80px;
+}
+
+#verline2 {
+    background-color: black;
+    height: 400px;
+    width: 10px;
+    position: relative;
+    bottom: 320px;
+    left: 120px;
+}
+
+#verline3 {
+    background-color: black;
+    height: 290px;
+    width: 10px;
+    position: relative;
+    bottom: 610px;
+    left: 320px;
+
+}
+
+#verline4 {
+    background-color: black;
+    height: 290px;
+    width: 10px;
+    position: relative;
+    bottom: 900px;
+    left: 370px;
+}
+
+#verline5 {
+    background-color: black;
+    height: 400px;
+    width: 10px;
+    position: relative;
+    bottom: 1300px;
+    left: 420px;
+}
+
+#verline6 {
+    background-color: black;
+    height: 400px;
+    width: 10px;
+    position: relative;
+    bottom: 1700px;
+    left: 490px;
+}
+/*red boxes*/
+#redclr1 {
+    background: #D71A20;
+    height: 110px;
+    width: 290px;
+    position: relative;
+    bottom: 411px;
+    left: 131px;
+}
+
+#redclr2 {
+    background: #D71A20;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    bottom: 261px;
+    left: 431px;
+}
+/*blue box*/
+#bluclr {
+    background-color: #17469E;
+    height: 60px;
+    width: 190px;
+    position: relative;
+    bottom: 321px;
+    left: 131px;
+}
+/*yellow boxes*/
+#yelclr1 {
+    background-color: #FEF200;
+    height: 70px;
+    width: 120px;
+    position: relative;
+    bottom: 311px;
+    left: 1px;
+}
+
+#yelclr2 {
+    background-color: #FEF200;
+    height: 70px;
+    width: 101px;
+    position: relative;
+    bottom: 381px;
+    left: 500px;
+}
+
+#yelclr3 {
+    background-color: #FEF200;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    bottom: 561px;
+    left: 91px;
+}
+
+#yelclr4 {
+    background-color: #FEF200;
+    height: 30px;
+    width: 40px;
+    position: relative;
+    bottom: 481px;
+    left: 381px;
+}
+/*-----------------------------------------*/
