@@ -1,0 +1,49 @@
+.hidden-on-desktop {
+    display: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 20px 0 20px 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-links li {
+    float: right;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    margin: 0;
+}
+
+h1 {
+    float: left;
+    margin: 0;
+}
+
+.main {
+    float: left;
+    width: 50%;
+}
+
+.sub-section {
+    float: right;
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+#social-media-links {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}
+
