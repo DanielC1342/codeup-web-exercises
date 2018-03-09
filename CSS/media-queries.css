@@ -24,9 +24,16 @@ h1 {
     margin: 0;
 }
 
+.header-img {
+    vertical-align: middle;
+}
+
 .header-img img{
     height: 385px;
     width: 890px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main {
@@ -81,8 +88,8 @@ footer {
 
     li a {
         display: block;
-        padding: 8px;
-        width: 150px;
+        padding-left: 0px;
+        width: 304px;
         margin: 3px;
         text-align: center;
         background-color: #dddddd;
