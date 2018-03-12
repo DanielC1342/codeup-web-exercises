@@ -92,7 +92,12 @@ li a {
         width: 100%;
     }
 
-    .column.
+    .column.icons {
+        width: 8%;
+    }
+    .column.copyright {
+        width: 76%;
+    }
 
     h1 {
         text-align: center;
