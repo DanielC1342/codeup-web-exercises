@@ -38,6 +38,10 @@ li a {
     margin: 15px 0;
 }
 
+footer {
+    position: relative;
+    top: 150px;
+}
 /* grid stuff */
 
 .container {
