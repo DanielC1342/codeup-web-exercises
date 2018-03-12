@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Media Queries</title>
+    <title>Media Queries Grid</title>
     <link rel="stylesheet" href="CSS/media-queries-grid.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -10,9 +10,9 @@
 <div class="alert-info hidden-on-desktop">
     <a href="#main">Skip to main content</a>
 </div>
-<h1>Company</h1>
+<h1 class="column half">Company</h1>
 <nav>
-    <ul class="nav-links">
+    <ul class="nav-links column half">
         <li><a href="https://twitter.com/">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Work</a></li>
@@ -22,21 +22,22 @@
 <div class="header-img">
     <img src="CSS/cssimg/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg" alt="waterfall">
 </div>
-<section id="main" class="main">
-    <h2>Main Section</h2>
-    <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
-</section>
-<section class="sub-section">
-    <h2>Sub-section</h2>
-    <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
-</section>
+<div class="container">
+    <section id="main" class="column half">
+        <h2>Main Section</h2>
+        <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
+    </section>
+    <section class="column half">
+        <h2>Sub-section</h2>
+        <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
+    </section>
+</div>
 <footer>
-    <p>(c) 2017 All rights reserved</p>
+    <p class="column copyright">(c) 2017 All rights reserved</p>
     <div id="social-media-links">
-        Find us on social media!
-        <a href="https://twitter.com/" target="_blank"><img src="CSS/cssimg/Twitter-icon.png" alt="twitter"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="CSS/cssimg/1000px-F_icon.svg.png" alt="facebook"></a>
-        <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="CSS/cssimg/app-icon2.png" alt="instagram"></a>
+        <a href="https://twitter.com/" target="_blank" class="column icons"><img src="CSS/cssimg/Twitter-icon.png" alt="twitter"></a>
+        <a href="https://www.facebook.com/" target="_blank" class="column icons"><img src="CSS/cssimg/1000px-F_icon.svg.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/?hl=en" target="_blank" class="column icons"><img src="CSS/cssimg/app-icon2.png" alt="instagram"></a>
     </div>
 </footer>
 </body>
