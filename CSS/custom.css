@@ -1,0 +1,16 @@
+.jumbotron {
+    background-image: url("cssimg/pizza.png");
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    opacity: 0.6;
+}
+
+.card {
+    width: 100%;
+}
