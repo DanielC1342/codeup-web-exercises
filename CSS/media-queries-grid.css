@@ -66,7 +66,6 @@ footer {
 
 .column.half {
     width: 50%;
-
 }
 
 .column.icons {
@@ -81,6 +80,21 @@ footer {
     width: 12.5%;
 }
 
+.column.twothird {
+    width: 66.6666%;
+}
+
+.column.threeeight {
+    width: 37.5%;
+}
+
+.column.twofouth {
+    width: 50%;
+}
+
+.column.threesix {
+    width: 50%;
+}
 
 /**/
 
