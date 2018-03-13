@@ -33,25 +33,25 @@
 
     <main class="container">
 
-            <div class="jumbotron d-none d-md-block">
-                <h1 class="display-4">Welcome to Pizza World!</h1>
-            </div>
+        <div class="jumbotron d-none d-md-block">
+            <h1 class="display-4">Welcome to Pizza World!</h1>
+        </div>
 
-            <h2>Build Your Own Pizza!</h2>
+        <h2>Build Your Own Pizza!</h2>
 
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" id="crustmenu-tab" href="#crustmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">1</span> Size and Crust</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="chzmenu-tab" href="#chzmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="toppingmenu-tab" href="#toppingmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
-                </li>
-            </ul>
-            <br>
-            <div class="tab-content">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="crustmenu-tab" href="#crustmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">1</span> Size and Crust</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="chzmenu-tab" href="#chzmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="toppingmenu-tab" href="#toppingmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
+            </li>
+        </ul>
+        <br>
+        <div class="tab-content">
             <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="crustmenu-tab" id="crustmenu" >
                 <div class="card-body">
                     <h5 class="card-title">Choose size and crust</h5>
@@ -112,39 +112,39 @@
                     <a href="#crustmenu" class="btn btn-primary saucesteps prevstep">< Previous Step</a>
                 </div>
             </div>
-                <div id="toppingmenu" class="tab-pane fade" role="tabpanel" aria-labelledby="toppingmenu-tab">
-                    <div class="card-body">
-                        <h5 class="card-title">Choose Toppings</h5>
-                        <div class="card">
-                            <div class="card-body">
-                                <h6>Choose Meats</h6>
-                                <ul>
-                                    <li><label><input type="checkbox" id="beef" name="meat[]" value="beef"> Beef</label></li>
-                                    <hr>
-                                    <li><label><input type="checkbox" id="ham" name="meat[]" value="ham"> Ham</label></li>
-                                    <hr>
-                                    <li><label><input type="checkbox" id="philly" name="meat[]" value="philly"> Philly Steak</label></li>
-                                    <hr>
-                                    <li><label><input type="checkbox" id="bacon" name="meat[]" value="bacon"> Bacon</label></li>
-                                </ul>
-                            </div>
-                            <div class="card-body">
-                                <h6>Choose Non-Meats</h6>
-                                <ul>
-                                    <li><label><input type="checkbox" id="grnpepper" name="nonmeat[]" value="grnpepper"> Green Peppers</label></li>
-                                    <hr>
-                                    <li><label><input type="checkbox" id="mushroom" name="nonmeat[]" value="mushroom"> Mushrooms</label></li>
-                                    <hr>
-                                    <li><label><input type="checkbox" id="onion" name="nonmeat[]" value="onion"> Onions</label></li>
-                                    <hr>
-                                    <li><label><input type="checkbox" id="jalapeno" name="nonmeat[]" value="jalapeno"> Jalapeno</label></li>
-                                </ul>
-                            </div>
+            <div id="toppingmenu" class="tab-pane fade" role="tabpanel" aria-labelledby="toppingmenu-tab">
+                <div class="card-body">
+                    <h5 class="card-title">Choose Toppings</h5>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>Choose Meats</h6>
+                            <ul>
+                                <li><label><input type="checkbox" id="beef" name="meat[]" value="beef"> Beef</label></li>
+                                <hr>
+                                <li><label><input type="checkbox" id="ham" name="meat[]" value="ham"> Ham</label></li>
+                                <hr>
+                                <li><label><input type="checkbox" id="philly" name="meat[]" value="philly"> Philly Steak</label></li>
+                                <hr>
+                                <li><label><input type="checkbox" id="bacon" name="meat[]" value="bacon"> Bacon</label></li>
+                            </ul>
                         </div>
-                        <a href="#" class="btn btn-primary crustbtn">Checkout <img src="CSS/cssimg/shoppinbtn.png" class="icon"></a>
+                        <div class="card-body">
+                            <h6>Choose Non-Meats</h6>
+                            <ul>
+                                <li><label><input type="checkbox" id="grnpepper" name="nonmeat[]" value="grnpepper"> Green Peppers</label></li>
+                                <hr>
+                                <li><label><input type="checkbox" id="mushroom" name="nonmeat[]" value="mushroom"> Mushrooms</label></li>
+                                <hr>
+                                <li><label><input type="checkbox" id="onion" name="nonmeat[]" value="onion"> Onions</label></li>
+                                <hr>
+                                <li><label><input type="checkbox" id="jalapeno" name="nonmeat[]" value="jalapeno"> Jalapeno</label></li>
+                            </ul>
+                        </div>
                     </div>
+                    <a href="#" class="btn btn-primary crustbtn">Checkout <img src="CSS/cssimg/shoppinbtn.png" class="icon"></a>
                 </div>
             </div>
+        </div>
 
     </main>
 <!-- Main page content -->
