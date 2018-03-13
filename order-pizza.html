@@ -41,17 +41,18 @@
 
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#crustmenu"><span class="badge badge-pill badge-secondary">1</span> Size and Crust</a>
+                    <a class="nav-link active" id="crustmenu-tab" href="#crustmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">1</span> Size and Crust</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#chzmenu"><span class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>
+                    <a class="nav-link" id="chzmenu-tab" href="#chzmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#toppingmenu"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
+                    <a class="nav-link" id="toppingmenu-tab" href="#toppingmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
                 </li>
             </ul>
             <br>
-            <div class="card" id="crustmenu">
+            <div class="tab-content">
+            <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="crustmenu-tab" id="crustmenu" >
                 <div class="card-body">
                     <h5 class="card-title">Choose size and crust</h5>
                     <div class="card">
@@ -76,7 +77,7 @@
                 </div>
             </div>
 
-            <div id="chzmenu" class="card">
+            <div id="chzmenu" class="tab-pane fade " role="tabpanel" aria-labelledby="chzmenu-tab">
                 <div class="card-body">
                     <h5 class="card-title">Choose Cheese and Sauce</h5>
                     <div class="card">
@@ -110,8 +111,8 @@
                     <a href="#toppingmenu" class="btn btn-primary saucesteps">Next Step ></a>
                     <a href="#crustmenu" class="btn btn-primary saucesteps prevstep">< Previous Step</a>
                 </div>
-
-                <div id="toppingmenu" class="card">
+            </div>
+                <div id="toppingmenu" class="tab-pane fade" role="tabpanel" aria-labelledby="toppingmenu-tab">
                     <div class="card-body">
                         <h5 class="card-title">Choose Toppings</h5>
                         <div class="card">
@@ -144,6 +145,7 @@
                     </div>
                 </div>
             </div>
+
     </main>
 <!-- Main page content -->
 
