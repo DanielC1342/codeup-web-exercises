@@ -10,7 +10,7 @@
     <!-- Your custom styles go here -->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand" href="#">Pizza World</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -27,7 +27,7 @@
                     </form>
                 </li>
             </ul>
-            <button class="btn my-2 my-sm-0" type="submit"><img src="CSS/cssimg/anon.jpg" class="icon" height="15px" width="15px"> Sign up</button>
+            <button class="btn my-2 my-sm-0" type="submit"><img src="CSS/cssimg/anon.jpg" class="icon"> Sign up</button>
         </div>
     </nav>
 
@@ -82,7 +82,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h6>Cheese</h6>
-                            <p>How much?</p>
+                            <label for="chzpls">How much?</label>
                             <select id="chzpls" name="chzpls">
                                 <option>Light</option>
                                 <option selected>Normal</option>
@@ -92,14 +92,14 @@
                         </div>
                         <div class="card-body">
                             <h6>Sauce</h6>
-                            <p>What kind?</p>
+                            <label for="saucetype">What kind?</label>
                             <select id="saucetype" name="saucetype">
                                 <option>Marinara</option>
                                 <option selected>Tomato</option>
                                 <option>BBQ</option>
                                 <option>Alfredo</option>
                             </select>
-                            <p>How much?</p>
+                            <label for="sauceamt">How much?</label>
                             <select id="sauceamt" name="sauceamt">
                                 <option>Light</option>
                                 <option selected>Normal</option>
@@ -134,7 +134,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary crustbtn">Checkout <img src="CSS/cssimg/shoppinbtn.png" class="icon" height="20px" width="20px"></a>
+                        <a href="#" class="btn btn-primary crustbtn">Checkout <img src="CSS/cssimg/shoppinbtn.png" class="icon"></a>
                     </div>
                 </div>
             </div>
