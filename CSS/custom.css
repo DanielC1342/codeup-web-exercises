@@ -11,6 +11,10 @@
     opacity: 0.6;
 }
 
+main.container {
+    padding: 0;
+}
+
 .card {
     width: 100%;
 }
@@ -26,6 +30,7 @@
 .card-body {
     padding: 0;
 }
+
 
 .card-text {
     padding: 0 15px;
@@ -79,4 +84,17 @@ select {
 
 label {
     margin-left: 15px;
+}
+
+input.form-control {
+    margin-left: 10px;
+}
+
+a.navbar-brand {
+    margin: 0;
+    text-decoration: underline;
+}
+
+a.prevstep {
+    margin-right: 5px;
 }
