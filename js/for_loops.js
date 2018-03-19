@@ -1,3 +1,4 @@
+"use strict";
 function showMultiplicationTable(x) {
     for (var y = 1; y <= 10;y++) {
         var product = x * y;

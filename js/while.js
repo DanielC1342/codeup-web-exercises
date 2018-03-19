@@ -1,3 +1,4 @@
+"use strict";
 var wile = 2;
 while (wile < 70000) {
     console.log(wile);
