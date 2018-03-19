@@ -161,32 +161,32 @@ function calculateTotal (x,y) {
     var total;
     switch (x) {
         case 0:
-            console.log("Because your lucky number is " + x + "you don't get a discount, sorry...");
+            console.log("Because your lucky number is " + x + " you don't get a discount, sorry...");
             break;
         case 1:
             discount = .1;
-            total = discount * y;
-            console.log("Because your lucky number is " + x + "you get a discount of 10%! Meaning your total is $" + total + "!");
+            total = y - (discount * y);
+            console.log("Because your lucky number is " + x + " you get a discount of 10%! Meaning your total is $" + total + "!");
             break;
         case 2:
             discount = .25;
-            total = discount * y;
-            console.log("Because your lucky number is " + x + "you get a discount of 25%! Meaning your total is $" + total + "!");
+            total = y - (discount * y);
+            console.log("Because your lucky number is " + x + " you get a discount of 25%! Meaning your total is $" + total + "!");
             break;
         case 3:
             discount = .35;
-            total = discount * y;
-            console.log("Because your lucky number is " + x + "you get a discount of 35%! Meaning your total is $" + total + "!");
+            total = y - (discount * y);
+            console.log("Because your lucky number is " + x + " you get a discount of 35%! Meaning your total is $" + total + "!");
             break;
         case 4:
             discount = .5;
-            total = discount * y;
-            console.log("Because your lucky number is " + x + "you get a discount of 50%! Meaning your total is $" + total + "!");
+            total = y - (discount * y);
+            console.log("Because your lucky number is " + x + " you get a discount of 50%! Meaning your total is $" + total + "!");
             break;
         case 5:
             discount = 0;
             total = discount * y;
-            console.log("Because your lucky number is " + x + "you get a discount of 10%! Meaning your total is $" + total + "!");
+            console.log("Because your lucky number is " + x + " your purchase is FREE! Meaning your total is $" + total + "!");
             break;
         case 6:
             console.log("6 is not a viable luck number, please consult a cashier");
