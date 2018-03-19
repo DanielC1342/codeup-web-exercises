@@ -60,3 +60,10 @@
     - fixed, we use pixels
     - fluid, we use percentages
     - responsive, we use media queries
+## CSS Frameworks
+
+*Separation of container and content
+*'.component .modifier' (container)
+    '.component-header modifier2'
+    '.component-body'
+    '.component-footer'
