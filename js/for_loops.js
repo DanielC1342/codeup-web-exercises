@@ -21,8 +21,18 @@ for (var r = 1;r<=10;r++) {
     console.log(rando + " is " + evenodd);
 }
 
-for (var primero = 1; primero < 10; primero++) {
+function numstring(x) {
+    var turn = x;
+    var strung = "";
+    while (turn>0){
+        strung = strung + x;
+        turn--;
+    }
+    return strung;
+}
 
+for (var primero = 1; primero < 10; primero++) {
+    console.log(numstring(primero));
 }
 
 for (var countdown = 100;countdown>0;countdown-=5) {
