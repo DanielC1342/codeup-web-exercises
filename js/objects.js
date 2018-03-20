@@ -99,9 +99,11 @@
      *      ...
      */
     books.forEach(function(book) {
-        var booknum = books.indexOf(book);
-        var auteur = book.firstName + " " + book.lastName;
-        consol
+        var booknum = books.indexOf(book) + 1;
+        var auteur = book.author.firstName + " " + book.author.lastName;
+        console.log("Book #" + booknum);
+        console.log("Title: " + book.title);
+        console.log("Author: " + auteur);
     });
     /**
      * Bonus:
