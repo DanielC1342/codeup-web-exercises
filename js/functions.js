@@ -51,8 +51,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 function isTwo(x) {
-    var two = x === 2;
-    return two;
+    return  x === 2;
 }
 console.log("The random number is "  + random + ", the statement 'random equals two is: " + isTwo(random) + "'");
 /**
@@ -94,7 +93,7 @@ console.log("Tip is " + calculateTip(percent,bill));
  */
 function applyDiscount(x,y) {
     var discount = x * y;
-    var finalPrice = x - discount;
-    return finalPrice;
+    return x - discount;
+
 }
 console.log("with an original price of 100 and a discount of .25, the new price is " + applyDiscount(100,.25));

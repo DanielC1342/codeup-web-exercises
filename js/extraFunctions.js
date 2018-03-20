@@ -91,10 +91,10 @@ console.log(double(1));
 console.log(double(2));
 console.log(double(3));
 
-function isValidPassword(password, username) {
+function isValidPassword(username,password) {
     return (password.length > 5 && password.indexOf(username) === -1 && password.length < 20 && password.indexOf(" ") === -1 && password.indexOf(" ") === -1);
 }
-console.log(isValidPassword("swordfish","rockarolla"));
+console.log(isValidPassword("rockarolla","swordfish"));
 
 function isRightTriangle(sin,cos,tan) {
     return (Math.pow(sin,2) + Math.pow(cos,2) === Math.pow(tan,2));
