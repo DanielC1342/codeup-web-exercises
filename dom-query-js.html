@@ -24,36 +24,37 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-<button onclick="shakeup();">Flip Turn Upside-Down</button>
+<button onclick="cooljs();">Flip Turn Upside-Down</button>
+<button onclick="subheadblu();">Flip Turn Upside-Down</button>
+<button onclick="listcolor();">Flip Turn Upside-Down</button>
+<button onclick="missionaccomplished();">Flip Turn Upside-Down</button>
 <script>
-    function shakeup() {
-        "use strict";
-        // TODO: Uncomment next line and get the main header element by id
+    "use strict";
+
+    function cooljs() {
         var mainHeader = document.getElementById("main-header");
         mainHeader.innerHTML = "JavaScript is Cool!";
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+    }
 
-        // TODO: Uncomment the next line and get the sub header element by id
+    function subheadblu() {
         var subHeader = document.getElementById("sub-header");
-
-        // TODO: Set the text color of subHeader to blue
         subHeader.style.color = "blue";
-        // TODO: Uncomment the next line and get all list items
-        var listItems = document.getElementsByTagName("li");
+    }
 
-        // TODO: Set text color on every other list item to grey
-        // TODO: Set text color of li with dbid = 1 to blue
+    function listcolor() {
+        var listItems = document.getElementsByTagName("li");
         for (var i = 0; i < listItems.length; i+=2) {
             listItems[i].style.color = "grey"
         }
         var dbid1 = document.querySelector("[data-dbid = '1']");
         dbid1.style.color = "blue";
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+    }
+
+    function missionaccomplished() {
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         for (var x = 0; x < subParagraphs.length; x++) {
             subParagraphs[x].innerHTML = "Mission Accomplished";
         }
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
     }
 </script>
 </body>
