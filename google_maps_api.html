@@ -25,7 +25,7 @@
 
             mapTypeId: google.maps.MapTypeId.HYBRID
         };
-
+        //vida mia address 22250 Bulverde Rd #114, San Antonio, TX 78261
         var address = "San Antonio";
 
 
@@ -35,7 +35,7 @@
         geocoder.geocode({ "address": address }, function(results, status) {
 
 
-            if (status == google.maps.GeocoderStatus.OK) {
+            if (status === google.maps.GeocoderStatus.OK) {
 
 
                 map.setCenter(results[0].geometry.location);
@@ -61,8 +61,27 @@
         });
         vidaWindow.open(map, vidaMarker);
 
-        //Brick House
-
+        // //Brick House
+        // var brickHouse = { lat: 29.611182, lng: -98.477754 };
+        // var brickMarker = new google.maps.Marker({
+        //     position: brickHouse,
+        //     map: map
+        // });
+        // var brickWindow = new google.maps.InfoWindow({
+        //    content: "The Brick House"
+        // });
+        // brickWindow.open(map,brickMarker);
+        //
+        // //Chuys
+        // var chuys = { lat:29.603563, lng: -98.469318 };
+        // var chuyMarker = new google.maps.Marker({
+        //     position: chuys,
+        //     map: map
+        // });
+        // var chuyWindow = new google.maps.InfoWindow({
+        //    content: "Chuy's"
+        // });
+        // chuyWindow.open(map,chuyMarker);
     })();
 </script>
 </body>
