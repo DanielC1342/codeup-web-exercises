@@ -25,22 +25,18 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 <button id = btn1>Change Header Text</button>
-<button id = btn2>Change Sub-Header Color</button>
 <button id = btn3>Change colors of the list items</button>
+<button id = btn2>Change Sub-Header Color</button>
 <button id = btn4>Change Paragraph Text</button>
+<button id = btn5>Revert all Changes</button>
 <script>
     "use strict";
-
+    //changes main header
     function cooljs() {
         var mainHeader = document.getElementById("main-header");
         mainHeader.innerHTML = "JavaScript is Cool!";
     }
-
-    function subheadblu() {
-        var subHeader = document.getElementById("sub-header");
-        subHeader.style.color = "blue";
-    }
-
+    //changes list item one to blue and makes every other item grey
     function listcolor() {
         var listItems = document.getElementsByTagName("li");
         for (var i = 0; i < listItems.length; i+=2) {
@@ -49,7 +45,12 @@
         var dbid1 = document.querySelector("[data-dbid = '1']");
         dbid1.style.color = "blue";
     }
-
+    //changes sub header to blue
+    function subheadblu() {
+        var subHeader = document.getElementById("sub-header");
+        subHeader.style.color = "blue";
+    }
+    //changes bottom paragraph
     function missionaccomplished() {
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         for (var x = 0; x < subParagraphs.length; x++) {
@@ -57,10 +58,37 @@
         }
     }
 
+    //revert all changes
+    function revert() {
+        //changes list items back to black
+        var listItems = document.getElementsByTagName("li");
+        for (var i = 0; i < listItems.length; i+=2) {
+            listItems[i].style.color = "black"
+        }
+        //changes main header
+        var mainHeader = document.getElementById("main-header");
+        mainHeader.innerHTML = "Hello World!";
+        //revert sub-header
+        var subHeader = document.getElementById("sub-header");
+        subHeader.style.color = "black";
+        //returns paragraph to lorem
+        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        for (var x = 0; x < subParagraphs.length; x++) {
+            subParagraphs[x].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n" +
+                "    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\n" +
+                "    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n" +
+                "    aliquip ex ea commodo consequat. Duis aute irure dolor in\n" +
+                "    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n" +
+                "    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n" +
+                "    culpa qui officia deserunt mollit anim id est laborum.";
+        }
+    }
+
     btn1.addEventListener('click', cooljs, false);
     btn2.addEventListener('click', subheadblu, false);
     btn3.addEventListener('click', listcolor, false);
     btn4.addEventListener('click', missionaccomplished, false);
+    btn5.addEventListener('click', revert, false);
 </script>
 </body>
 </html>
