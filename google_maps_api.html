@@ -27,12 +27,12 @@
 
         var mapOptions = {
 
-            zoom: 10,
+            zoom: 13,
 
             mapTypeId: google.maps.MapTypeId.HYBRID
         };
         //vida mia address 22250 Bulverde Rd #114, San Antonio, TX 78261
-        var address = "San Antonio, TX";
+        var address = "Encino Park, San Antonio, TX";
 
 
         var geocoder = new google.maps.Geocoder();
@@ -65,32 +65,42 @@
             content: "<h3>Vida Mia</h3><p>My favorite dish here is the Huaraches Borracho. I order it so often that the staff alrady know me as a regular.</p>"
         });
         vidaMarker.addListener('click',function() {
-            // map.setZoom(19);
-            // map.setCenter(vidaMarker.getPosition());
+            map.setZoom(19);
+            map.setCenter(vidaMarker.getPosition());
             vidaWindow.open(map, vidaMarker);
         });
 
-        // //Brick House
-        // var brickHouse = { lat: 29.611182, lng: -98.477754 };
-        // var brickMarker = new google.maps.Marker({
-        //     position: brickHouse,
-        //     map: map
-        // });
-        // var brickWindow = new google.maps.InfoWindow({
-        //    content: "The Brick House"
-        // });
-        // brickWindow.open(map,brickMarker);
-        //
-        // //Chuys
-        // var chuys = { lat:29.603563, lng: -98.469318 };
-        // var chuyMarker = new google.maps.Marker({
-        //     position: chuys,
-        //     map: map
-        // });
-        // var chuyWindow = new google.maps.InfoWindow({
-        //    content: "Chuy's"
-        // });
-        // chuyWindow.open(map,chuyMarker);
+        //Brick House
+        var brickHouse = { lat: 29.611182, lng: -98.477754 };
+        var brickMarker = new google.maps.Marker({
+            position: brickHouse,
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        var brickWindow = new google.maps.InfoWindow({
+           content: "<h3>The Brick House</h3><p>Their Fish and Chips are the best I've ever had</p>"
+        });
+        brickMarker.addListener('click',function() {
+            map.setZoom(19);
+            map.setCenter(brickMarker.getPosition());
+            brickWindow.open(map, brickMarker);
+        });
+
+        //Chuys
+        var chuys = { lat:29.603563, lng: -98.469318 };
+        var chuyMarker = new google.maps.Marker({
+            position: chuys,
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        var chuyWindow = new google.maps.InfoWindow({
+           content: "<h3>Chuy's</h3><p>I have been coming here sine I was in Middle School, I always order the Chimichanga</p>"
+        });
+        chuyMarker.addListener('click',function() {
+            map.setZoom(19);
+            map.setCenter(chuyMarker.getPosition());
+            chuyWindow.open(map, chuyMarker);
+        });
     })();
 </script>
 </body>
