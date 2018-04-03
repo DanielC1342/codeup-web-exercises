@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Google Maps API</title>
     <style type="text/css">
+        body {
+            background-color: black;
+        }
         #map-canvas {
             width: 900px;
             height: 600px;
@@ -24,12 +27,12 @@
 
         var mapOptions = {
 
-            zoom: 19,
+            zoom: 10,
 
             mapTypeId: google.maps.MapTypeId.HYBRID
         };
         //vida mia address 22250 Bulverde Rd #114, San Antonio, TX 78261
-        var address = "22250 Bulverde Rd #114, San Antonio, TX 78261";
+        var address = "San Antonio, TX";
 
 
         var geocoder = new google.maps.Geocoder();
@@ -55,6 +58,7 @@
         var vidaMia = { lat: 29.648968, lng: -98.425004 };
         var vidaMarker = new google.maps.Marker({
             position: vidaMia,
+            animation: google.maps.Animation.DROP,
             map: map
         });
         var vidaWindow = new google.maps.InfoWindow({
