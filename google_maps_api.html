@@ -7,6 +7,13 @@
         body {
             background-color: black;
         }
+        .title {
+            color: white;
+            text-align: center;
+            float: bottom;
+            position: relative;
+            top: 90px;
+        }
         #map-canvas {
             width: 900px;
             height: 600px;
@@ -18,6 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<h1 class="title">Map of My Favorite Restaurants</h1>
 <div id="map-canvas"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz4yi8HcqwCVAtETzVntbVmJk0V61y3-M&callback=initMap"></script>
 <script type="text/javascript">
