@@ -7,10 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+<h1>Konami Code</h1>
 
 <script src="js/jquery-2.2.4.js"></script>
 <script>
+    var codearr = [];
+    var konami = "38,38,40,40,37,39,37,39,66,65,13";
+    function check() {
+        var code = codearr.join();
+        console.log(code);
+        if(code === konami) {
+            alert("You Added 30 Lives!");
+        }
+        else {
+            console.log("not yet");
+        }
+    }
+    $(document).keyup(function(event){
+        codearr.push(event.keyCode);
+        console.log(codearr);
+        check();
+    });
 
 </script>
 </body>
