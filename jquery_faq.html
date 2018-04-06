@@ -18,9 +18,17 @@
         .blutext {
             color: blue;
         }
+        span {
+            border: 1px solid black;
+        }
+        ul>li {
+            display: none;
+        }
     </style>
 </head>
 <body>
+<div><h1>Would you like to sign up for our newsletter?</h1><span>X</span></div>
+<h2 class="invisible">Please Register for the site</h2>
 <h1>FAQ for Ulysses S. Grant National Historic Site</h1>
 <div id="ddshow" class="anchor">Show Answers</div>
 <dl>
@@ -84,15 +92,15 @@
     });
     $("h3.ylw").click(function (event) {
         event.preventDefault();
-        $("ul.ylw").first().children().toggleClass("bold");
+        $("ul.ylw").first().children().slideToggle();
     });
     $("h3.yos").click(function (event) {
         event.preventDefault();
-        $("ul.yos").first().children().toggleClass("bold");
+        $("ul.yos").first().children().slideToggle();
     });
     $("h3.gcn").click(function (event) {
         event.preventDefault();
-        $("ul.gcn").first().children().toggleClass("bold");
+        $("ul.gcn").first().children().slideToggle();
     });
     $("li").click(function (event) {
         event.preventDefault();
@@ -102,6 +110,11 @@
     function lastYellow() {
         $("ul li:last-child").toggleClass("highlight");
     }
+    $("span").click(function (event) {
+        event.preventDefault();
+        $("div").hide();
+    });
+
 </script>
 </body>
 </html>
