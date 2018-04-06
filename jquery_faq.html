@@ -27,7 +27,7 @@
     </style>
 </head>
 <body>
-<div><h1>Would you like to sign up for our newsletter?</h1><span>X</span></div>
+<div class="signup"><h1>Would you like to sign up for our newsletter?</h1><span>X</span></div>
 <h2 class="invisible">Please Register for the site</h2>
 <h1>FAQ for Ulysses S. Grant National Historic Site</h1>
 <div id="ddshow" class="anchor">Show Answers</div>
@@ -112,7 +112,7 @@
     }
     $("span").click(function (event) {
         event.preventDefault();
-        $("div").hide();
+        $("div.signup").hide();
     });
 
 </script>
