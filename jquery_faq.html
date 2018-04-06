@@ -9,7 +9,7 @@
         .invisible {
             display: none;
         }
-        dt {
+        .bold {
             font-weight: bold;
         }
         .highlight {
@@ -21,46 +21,46 @@
 <h1>FAQ for Ulysses S. Grant National Historic Site</h1>
 <div id="ddshow" class="anchor">Show Answers</div>
 <dl>
-    <dt>1.Why is a house called the "White Haven" painted green</dt>
+    <dt class="bold">1.Why is a house called the "White Haven" painted green</dt>
         <dd class="invisible">Perhaps the most frequent topic for visitor questions is the house’s historic Paris Green color. Previous Dent family residences in England and Maryland were called "White Haven," so the familiar name carried over to this property. The Paris Green color dates to the 1870s, and was quite popular during that era. Paint sampling and historic store ledgers confirm that this was indeed the color of the house. Some of the original paint is visible on the back porch, inside the mud room.</dd>
-    <dt>2.What types of wood were used or constructing the house?</dt>
+    <dt class="bold">2.What types of wood were used or constructing the house?</dt>
         <dd class="invisible">Oak and pine varieties are by far the most common woods used in the house’s construction. Walnut was also used fairly extensively.</dd>
-    <dt>3.Why is the house unfurnished?</dt>
+    <dt class="bold">3.Why is the house unfurnished?</dt>
         <dd class="invisible">Unfortunately, we do not know the types of furnishings that were used in the home. The Grants furnishings were burned in a fire at Wish-ton-wish (another building on the property) in 1873. Since we lack the necessary information, the National Park Service has chosen to use a few representative pieces as touchstones for the Grant’s story.</dd>
-    <dt>4.What was on the interior walls of the house in the Grants' day?</dt>
+    <dt class="bold">4.What was on the interior walls of the house in the Grants' day?</dt>
         <dd class="invisible">We know that at least one room was wallpapered, and we have replicated that wallpaper in the dining room. The remaining rooms are restored to how they would have looked, using the wall and trim paint colors confirmed through research and sampling.</dd>
-    <dt>5.When was the house built?</dt>
+    <dt class="bold">5.When was the house built?</dt>
         <dd class="invisible">This question has a fairly complex answer, due to the many additions throughout the early history of the structure. The original two-story main section is called the Long House (after owner William Lindsay Long), and dates to around 1818. The next owners, the Hunt family, added the two-room portion to the back of the house (called the "Hunt Addition") by 1820. The West Wing addition (on the left side, if you are facing the house) and back porch were added by 1840, and the East Wing addition (on the right side, if you are facing the house) was added sometime after the Civil War. The first-floor kitchen and mud room were added by 1868.</dd>
-    <dt>6.Are the buildings in their original locations?</dt>
+    <dt class="bold">6.Are the buildings in their original locations?</dt>
         <dd class="invisible">Yes and no. All of the historic structures are, with the exception of the chicken house and barn. Although it dates to the historic period, the chicken house was located elsewhere on the site, perhaps near the barn, which was originally located southeast of its current location prior to being moved in 1962.</dd>
-    <dt>7.Are the floors in the house original?</dt>
+    <dt class="bold">7.Are the floors in the house original?</dt>
         <dd class="invisible">No, although they do emulate the appearance of the original floor, which is located just underneath the current one.</dd>
-    <dt>8.What's upstairs, and why can't I go there?</dt>
+    <dt class="bold">8.What's upstairs, and why can't I go there?</dt>
         <dd class="invisible">Two bedrooms (on the second floor) and an attic are upstairs. Due to safety concerns they are not accessible to the public.</dd>
-    <dt>9.Why is there a closet in one room?</dt>
+    <dt class="bold">9.Why is there a closet in one room?</dt>
         <dd class="invisible">The room, called the West Wing addition, is a vertical log structure which was attached to the west exterior wall of the main house. The chimney stack for the dining room separates this wall from the West Wing, creating a closet space.</dd>
-    <dt>10.Where did the slaves live?</dt>
+    <dt class="bold">10.Where did the slaves live?</dt>
         <dd class="invisible">We know that both the winter and summer kitchens also served as living quarters for some of the enslaved, but the majority of the slaves lived in cabins somewhere beyond the rear of the house. The exact location is unknown.</dd>
 </dl>
 
-<h3>Yellowstone Facts</h3>
-<ul>
+<h3 class="ylw">Yellowstone Facts</h3>
+<ul class="ylw">
     <li>America's first national park.</li>
     <li>Established in 1872</li>
     <li>Approximately 50 percent of the world’s hydrothermal features are at Yellowstone National Park</li>
     <li>Spans almost 3,500 miles</li>
 </ul>
 
-<h3>Yosemite Facts</h3>
-<ul>
+<h3 class="yos">Yosemite Facts</h3>
+<ul class="yos">
     <li>Created Oct 1st, 1890</li>
     <li>The tallest waterfall in North America is located in Yosemite National Park.</li>
     <li>20% of California's 7,000 plant species are found within Yosemite.</li>
     <li>There are at least 300 black bears in the park, and possibly as many as 500.</li>
 </ul>
 
-<h3>Grand Canyon Facts</h3>
-<ul>
+<h3 class="gcn">Grand Canyon Facts</h3>
+<ul class="gcn">
     <li>Covers an area of 1,900 square miles.</li>
     <li>Was made a national monument in 1908 and became a national park in 1919.</li>
     <li>The deepest point of the canyon is just over a mile deep.</li>
@@ -75,12 +75,22 @@
     $("#ddshow").click(function (event) {
         event.preventDefault();
         $("dd").toggleClass("invisible").toggleClass("visible");
-
     });
     $("dt").click(function () {
         $(this).css("background-color","yellow");
     });
-
+    $("h3.ylw").click(function (event) {
+        event.preventDefault();
+        $("ul.ylw").first().children().toggleClass("bold");
+    });
+    $("h3.yos").click(function (event) {
+        event.preventDefault();
+        $("ul.yos").first().children().toggleClass("bold");
+    });
+    $("h3.gcn").click(function (event) {
+        event.preventDefault();
+        $("ul.gcn").first().children().toggleClass("bold");
+    });
 
     function lastYellow() {
         $("ul li:last-child").toggleClass("highlight");
