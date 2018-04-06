@@ -12,6 +12,9 @@
         dt {
             font-weight: bold;
         }
+        .highlight {
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -64,9 +67,10 @@
     <li>The North Rim of the Grand Canyon at an average height of 8,000 ft.</li>
 </ul>
 
-<button onclick=""></button>
+<button onclick="lastYellow();">Last Item Highlight</button>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
+    "use strict";
     $(".anchor").css({"color":"blue", "text-decoration":"underline"});
     $("#ddshow").click(function (event) {
         event.preventDefault();
@@ -78,6 +82,9 @@
     });
 
 
+    function lastYellow() {
+        $("ul li:last-child").toggleClass("highlight");
+    }
 </script>
 </body>
 </html>
