@@ -5,10 +5,18 @@
     <title>FAQ</title>
     <link rel="stylesheet" href="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .invisible {
+            display: none;
+        }
+        dt {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 <h1>FAQ for Ulysses S. Grant National Historic Site</h1>
-<div class="anchor ddshow">Show Answers</div>
+<div id="ddshow" class="anchor">Show Answers</div>
 <dl>
     <dt>1.Why is a house called the "White Haven" painted green</dt>
         <dd class="invisible">Perhaps the most frequent topic for visitor questions is the house’s historic Paris Green color. Previous Dent family residences in England and Maryland were called "White Haven," so the familiar name carried over to this property. The Paris Green color dates to the 1870s, and was quite popular during that era. Paint sampling and historic store ledgers confirm that this was indeed the color of the house. Some of the original paint is visible on the back porch, inside the mud room.</dd>
@@ -34,11 +42,14 @@
 
 <script src="js/jquery-2.2.4.js"></script>
 <script>
-    $(".invisible").css("display","none");
     $(".anchor").css({"color":"blue", "text-decoration":"underline"});
-    $(".ddshow").click(function (event) {
+    $("#ddshow").click(function (event) {
         event.preventDefault();
-        $(this).toggleClass("invisible");
+        $("dd").toggleClass("invisible").toggleClass("visible");
+
+    });
+    $("dt").click(function () {
+        $(this).css("background-color","yellow");
     });
 </script>
 </body>
