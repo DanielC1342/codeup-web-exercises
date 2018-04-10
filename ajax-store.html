@@ -32,7 +32,7 @@
         //       HINT: You will want to target #insertProducts for your new HTML elements
         request.done(function(response) {
             response.forEach(function (item) {
-               $("#insertProducts").append("<tr><td>" + item.title + "</td><td>" + item.qunatity + "</td><td>" + item.price + "</td><td>" + item.catagories + "</td></tr>");
+               $("#insertProducts").append("<tr><td>" + item.title + "</td><td>" + item.quantity + "</td><td>" + item.price + "</td><td>" + item.categories + "</td></tr>");
             });
         });
     })();
