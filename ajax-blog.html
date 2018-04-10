@@ -4,15 +4,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 </head>
 <body>
-    <div id="posts"></div>
+<div id="posts"></div>
+<button id="refresh">REFRESH</button>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    function refreshing() {
+        $("#posts ").html("");
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
+        var request = $.ajax("data/blog.json");
 
-    </script>
+        request.done(function(response) {
+            // response.forEach(function (item) {
+            //     $("#insertProducts").append("<tr><td>" + item.title + "</td><td>" + item.quantity + "</td><td>$" + item.price + "</td><td>" + item.categories + "</td></tr>");
+            // });
+            response.forEach(function (post) {
+                $("#posts").append("<div class='card'><h3><u>" + post.title + "</u></h3><p class='px-3 mb-0'>" + post.content + "</p><span class='text-right'><strong>-" + post.date + "</strong></span><span class='text-secondary'><em>" + post.categories + "</em></span></div>");
+            });
+        });
+    }
+    refreshing();
+    refresh.addEventListener('click', refreshing, false);
+</script>
 </body>
 </html>
