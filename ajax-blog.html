@@ -12,6 +12,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
+    function onError(jqXHR, status, message) {
+        console.log(jqXHR, status, message);
+    }
+
     function refreshing() {
         $("#posts ").html("");
 
@@ -25,6 +29,8 @@
                 $("#posts").append("<div class='card'><h3><u>" + post.title + "</u></h3><p class='px-3 mb-0'>" + post.content + "</p><span class='text-right'><strong>-" + post.date + "</strong></span><span class='text-secondary'><em>" + post.categories + "</em></span></div>");
             });
         });
+
+        request.fail(onError());
     }
     refreshing();
     refresh.addEventListener('click', refreshing, false);
