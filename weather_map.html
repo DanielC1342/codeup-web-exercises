@@ -5,30 +5,53 @@
     <title>Weather Map</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #map-canvas {
+            height: 475px;
+        }
+    </style>
 </head>
 <body>
-<div class="card"><div class="card-header text-center h1 bg-secondary"><strong>WEATHER APPLICATION</strong></div>
+<div class="card mx-2"><div class="card-header text-center h1 bg-secondary"><strong>WEATHER APPLICATION</strong></div>
     <div class="text-center bg-info h2 mb-0 pt-2"><u>San Antonio</u></div>
-    <div class="card-body row pt-1 bg-info py-3">
+    <div class="card-body row pt-1 bg-info py-3 mx-0">
         <div id="day1" class="card col-4 text-center">tic</div>
         <div id="day2" class="card col-4 text-center">tac</div>
         <div id="day3" class="card col-4 text-center">toe</div>
     </div>
+    <div id="map-canvas"></div>
 </div>
-
 <script src="js/jquery-2.2.4.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQCk01Mf_Nqr7wwqBv0d90stCQno4aujw"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
+    "use strict";
+    //Map AIzaSyB7k6pRfzQYmX7x2GNk3XgEa2Dl8PQfS-c
+    (function() {
+        var mapOptions = {
+            zoom: 5,
+            center: {
+                lat: 29.423017,
+                lng: -98.48527
+            }
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+    })();
+
+
+
+
+    //Weather Report
     var request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily",{
         APPID: "8f32c0149a278cdb5f995fbb3d98eba5",
-        lat:    29.423017,
-        lon:   -98.48527,
+        lat: 29.423017,
+        lon: -98.48527,
         units: "imperial",
         cnt: 3
     });
     request.done(function (response) {
-        console.log(response);
+        // console.log(response);
         //temp
         $("#day1").html("<span>"+Math.round(response.list[0].temp.max)+"&deg;/"+Math.round(response.list[0].temp.min)+"&deg;</span>");
         $("#day2").html("<span>"+Math.round(response.list[1].temp.max)+"&deg;/"+Math.round(response.list[1].temp.min)+"&deg;</span>");
