@@ -69,14 +69,14 @@
             animation: google.maps.Animation.DROP,
             map: map
         });
-        var vidaWindow = new google.maps.InfoWindow({
-            content: "<h3>Vida Mia</h3><p>My favorite dish here is the Huaraches Borracho. I order it so often that the staff alrady know me as a regular.</p>"
-        });
-        vidaMarker.addListener('click',function() {
-            map.setZoom(19);
-            map.setCenter(vidaMarker.getPosition());
-            vidaWindow.open(map, vidaMarker);
-        });
+        // var vidaWindow = new google.maps.InfoWindow({
+        //     content: "<h3>Vida Mia</h3><p>My favorite dish here is the Huaraches Borracho. I order it so often that the staff alrady know me as a regular.</p>"
+        // });
+        // vidaMarker.addListener('click',function() {
+        //     map.setZoom(19);
+        //     map.setCenter(vidaMarker.getPosition());
+        //     vidaWindow.open(map, vidaMarker);
+        // });
 
         //Brick House
         var brickHouse = { lat: 29.611182, lng: -98.477754 };
