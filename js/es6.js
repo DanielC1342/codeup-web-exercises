@@ -39,9 +39,9 @@ const languages = ['html','css','javascript','python'];
 
 // TODO: rewrite the object literal using object property shorthand
 users.push({
-  name,
-  email,
-  languages
+    name,
+    email,
+    languages
 });
 
 // TODO: replace `var` with `let` in the following variable declarations
