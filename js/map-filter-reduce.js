@@ -36,3 +36,9 @@ console.log(threelang);
 
 const emails = users.map(user => user.email);
 console.log(emails);
+
+const keyobj = users.reduce((keyobj,user)=>{
+    keyobj[user.id] = user;
+    return keyobj;
+},{});
+console.log(keyobj);
